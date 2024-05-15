@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+  @apply px-4 py-2 rounded-md text-white shadow-button transition-all duration-200 ease-in-out;
+}
+
+.btn-normal {
+  @apply bg-green-dark hover:bg-green-light;
+}
+
+.btn-hover {
+  @apply bg-green-dark hover:bg-gray-medium;
+}
