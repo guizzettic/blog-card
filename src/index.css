@@ -13,3 +13,11 @@
 .btn-hover {
   @apply bg-green-dark hover:bg-gray-medium;
 }
+
+.btn-focus {
+  @apply bg-green-dark focus:ring-2 focus:ring-gray-light;
+}
+
+.btn-disabled {
+  @apply bg-gray-medium cursor-not-allowed;
+}
