@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .btn {
-  @apply px-4 py-2 rounded-md text-white shadow-button transition-all duration-200 ease-in-out;
+  @apply px-4 py-2 rounded-md text-white shadow-button transition-all duration-200 ease-in-out font-extrabold;
 }
 
 .btn-normal {
