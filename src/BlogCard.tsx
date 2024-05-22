@@ -26,10 +26,10 @@ const BlogCard: React.FC<BlogCardProps> = ({
       />
 
       <div
-        className="flex h-full w-full flex-col justify-around bg-red-200 px-4"
+        className="flex h-full w-full flex-col justify-around px-4"
         role="contentinfo"
       >
-        <div className="flex h-[60px] flex-col justify-between bg-gray-200">
+        <div className="flex h-[60px] flex-col justify-between">
           <p className="inline-block h-6 w-16 rounded-xl border border-green-200 bg-green-50 text-center text-sm text-green-700">
             {label}
           </p>
@@ -37,7 +37,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
             {title}
           </h3>
         </div>
-        <div className="flex h-[96px] flex-col justify-between bg-blue-200">
+        <div className="flex h-[96px] flex-col justify-between">
           <p className="text-neutral-600">{message}</p>
           <div className="flex w-[114px] items-center justify-between">
             <a
@@ -58,3 +58,4 @@ const BlogCard: React.FC<BlogCardProps> = ({
 };
 
 export default BlogCard;
+// 89.3, 71.2, 58.9
