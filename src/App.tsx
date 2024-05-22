@@ -1,5 +1,5 @@
 import "./index.css";
-import BlogCard from "./BlogCard";
+import React, { Suspense } from "react";
 import image from "./assets/spacejoy-YqFz7UMm8qE-unsplash.jpg";
 
 const Card = {
@@ -11,16 +11,20 @@ const Card = {
   link: "https://www.google.com",
 };
 
+const BlogCard = React.lazy(() => import("./BlogCard"));
+
 function App() {
   return (
-    <div className="flex flex-col items-center min-h-screen bg-gradient-to-br from-gray-light to-gray-medium p-4 sm:bg-gradient-to-r sm:from-gray-light sm:to-gray-medium">
-      <BlogCard
-        img={Card.img}
-        label={Card.label}
-        title={Card.title}
-        message={Card.message}
-        link={Card.link}
-      />
+    <div className="flex h-screen w-screen justify-center bg-gradient-to-br from-gray-100 to-gray-300 p-4 pt-[120px]">
+      <Suspense fallback={<div>Loading...</div>}>
+        <BlogCard
+          img={Card.img}
+          label={Card.label}
+          title={Card.title}
+          message={Card.message}
+          link={Card.link}
+        />
+      </Suspense>
     </div>
   );
 }
