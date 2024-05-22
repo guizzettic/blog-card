@@ -19,7 +19,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
   return (
     <div className="flex h-auto max-h-[504px] w-auto max-w-[340px] flex-col justify-between overflow-hidden rounded-xl bg-white shadow-md">
       <img
-        className="h-80 w-full object-cover"
+        className="h-[288px] w-full object-cover"
         src={img}
         alt="Interior design inspiration"
         loading="lazy"
