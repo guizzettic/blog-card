@@ -33,7 +33,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
           <p className="inline-block h-6 w-16 rounded-xl border border-green-200 bg-green-50 text-center text-sm text-green-700">
             {label}
           </p>
-          <h3 className="text-lg font-medium tracking-wide text-neutral-900">
+          <h3 className="text-lg font-semibold tracking-wide text-neutral-900">
             {title}
           </h3>
         </div>
@@ -42,15 +42,14 @@ const BlogCard: React.FC<BlogCardProps> = ({
           <div className="flex w-[114px] items-center">
             <a
               href={link}
-              className="font-medium text-indigo-700 hover:text-indigo-500"
+              className="font-medium tracking-wide text-indigo-700 hover:text-indigo-500"
               role="button"
               aria-label="Read more about Top 5 Living Room Inspirations"
-              tabIndex={0}
             >
               Read more
             </a>
             <div className="flex size-[20px] items-center">
-              <img src={VectorArrow} className="ml-2.5 " />
+              <img src={VectorArrow} className="ml-3" />
             </div>
           </div>
         </div>
