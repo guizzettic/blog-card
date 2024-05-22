@@ -26,30 +26,32 @@ const BlogCard: React.FC<BlogCardProps> = ({
       />
 
       <div
-        className="flex h-full w-full flex-col justify-around px-4 py-6"
+        className="flex h-full w-full flex-col justify-around px-4 py-5"
         role="contentinfo"
       >
         <div className="flex h-[60px] flex-col justify-between">
           <p className="inline-block h-6 w-16 rounded-xl border border-green-200 bg-green-50 text-center text-sm text-green-700">
             {label}
           </p>
-          <h3 className="text-lg font-semibold tracking-wide text-neutral-900">
+          <h3 className="text-lg font-medium tracking-wide text-neutral-900">
             {title}
           </h3>
         </div>
         <div className="flex h-[96px] flex-col justify-between">
-          <p className="text-neutral-600">{message}</p>
+          <p className="font-medium text-neutral-600">{message}</p>
           <div className="flex w-[114px] items-center">
             <a
               href={link}
-              className="text-indigo-700 hover:text-indigo-500"
+              className="font-medium text-indigo-700 hover:text-indigo-500"
               role="button"
               aria-label="Read more about Top 5 Living Room Inspirations"
               tabIndex={0}
             >
               Read more
             </a>
-            <img src={VectorArrow} className="ml-2 h-[13px] w-[13px]" />
+            <div className="flex size-[20px] items-center">
+              <img src={VectorArrow} className="ml-2.5 " />
+            </div>
           </div>
         </div>
       </div>
@@ -58,3 +60,4 @@ const BlogCard: React.FC<BlogCardProps> = ({
 };
 
 export default BlogCard;
+// 97.7, 96.8, 91.6
