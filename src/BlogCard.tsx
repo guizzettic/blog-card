@@ -26,7 +26,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
       />
 
       <div
-        className="flex h-full w-full flex-col justify-around px-4"
+        className="flex h-full w-full flex-col justify-around px-4 py-6"
         role="contentinfo"
       >
         <div className="flex h-[60px] flex-col justify-between">
@@ -39,17 +39,17 @@ const BlogCard: React.FC<BlogCardProps> = ({
         </div>
         <div className="flex h-[96px] flex-col justify-between">
           <p className="text-neutral-600">{message}</p>
-          <div className="flex w-[114px] items-center justify-between">
+          <div className="flex w-[114px] items-center">
             <a
               href={link}
-              className="bg-transparent text-indigo-700 hover:text-indigo-500"
+              className="text-indigo-700 hover:text-indigo-500"
               role="button"
               aria-label="Read more about Top 5 Living Room Inspirations"
               tabIndex={0}
             >
               Read more
             </a>
-            <img src={VectorArrow} className="size-4" />
+            <img src={VectorArrow} className="ml-2 h-[13px] w-[13px]" />
           </div>
         </div>
       </div>
@@ -58,4 +58,3 @@ const BlogCard: React.FC<BlogCardProps> = ({
 };
 
 export default BlogCard;
-// 89.3, 71.2, 58.9
